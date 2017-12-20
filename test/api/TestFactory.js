@@ -329,7 +329,7 @@ window.TestFactory.prototype.exposeConversationActors = function() {
 
       TestFactory.conversation_service = new z.conversation.ConversationService(
         this.client,
-        TestFactory.storage_service
+        TestFactory.storageService
       );
       TestFactory.conversation_service.logger.level = this.settings.logging_level;
 
